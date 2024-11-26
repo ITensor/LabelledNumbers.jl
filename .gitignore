@@ -1,0 +1,16 @@
+*.jl.*.cov
+*.jl.cov
+*.jl.mem
+*.o
+*.swp
+.DS_Store
+.benchmarkci
+.tmp
+.vscode/
+/docs/Manifest.toml
+/docs/build/
+/docs/src/index.md
+Manifest.toml
+benchmark/*.json
+docs/build/
+test/LocalPreferences.toml

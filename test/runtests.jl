@@ -1,6 +1,6 @@
 @eval module $(gensym())
 using LinearAlgebra: norm
-using NDTensors.LabelledNumbers:
+using LabelledNumbers:
   LabelledInteger, LabelledUnitRange, islabelled, label, labelled, unlabel
 using Test: @test, @testset
 @testset "LabelledNumbers" begin
