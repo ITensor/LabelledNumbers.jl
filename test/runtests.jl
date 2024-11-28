@@ -1,7 +1,7 @@
 @eval module $(gensym())
 using LinearAlgebra: norm
 using LabelledNumbers:
-  LabelledInteger, LabelledUnitRange, islabelled, label, labelled, unlabel
+  LabelledInteger, LabelledUnitRange, islabelled, label, label_type, labelled, unlabel
 using Test: @test, @testset
 @testset "LabelledNumbers" begin
   @testset "Labelled number ($n)" for n in (2, 2.0)
@@ -10,6 +10,8 @@ using Test: @test, @testset
     @test islabelled(x)
     @test x == 2
     @test label(x) == "x"
+    @test label_type(x) === String
+    @test label_type(typeof(x)) === String
     @test unlabel(x) == 2
     @test !islabelled(unlabel(x))
 
@@ -128,5 +130,7 @@ using BlockArrays: Block, blockaxes, blocklength, blocklengths
   @test a == 1:2
   @test a isa LabelledUnitRange
   @test label(a) == "x"
+  @test label_type(a) === String
+  @test label_type(typeof(a)) === String
 end
 end

@@ -6,7 +6,7 @@ end
 LabelledStyle(::Type{<:LabelledUnitRange}) = IsLabelled()
 label(lobject::LabelledUnitRange) = lobject.label
 # TODO: Use `TypeParameterAccessors`.
-label_type(::Type{<:LabelledUnitRange{<:Any,Label}}) where {Label} = Label
+label_type(::Type{<:LabelledUnitRange{<:Any,<:Any,Label}}) where {Label} = Label
 labelled(object::AbstractUnitRange, label) = LabelledUnitRange(object, label)
 unlabel(lobject::LabelledUnitRange) = lobject.value
 unlabel_type(::Type{<:LabelledUnitRange{Value}}) where {Value} = Value
