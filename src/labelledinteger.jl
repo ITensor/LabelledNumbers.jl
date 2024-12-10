@@ -93,7 +93,6 @@ Base.:-(x::LabelledInteger) = labelled_minus(x)
 # Delete once we drop support for older Julia versions.
 Base.hash(x::LabelledInteger, h::UInt64) = labelled_hash(x, h)
 
-using Random: AbstractRNG, default_rng
 default_eltype() = Float64
 for f in [:rand, :randn]
   @eval begin
