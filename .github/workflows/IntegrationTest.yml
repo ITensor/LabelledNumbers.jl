@@ -17,8 +17,8 @@ jobs:
     strategy:
        matrix:
          repo:
-           - 'ITensor/SymmetrySectors.jl'
            - 'ITensor/GradedUnitRanges.jl'
+           - 'ITensor/SymmetrySectors.jl'
     uses: "ITensor/ITensorActions/.github/workflows/IntegrationTest.yml@main"
     with:
       localregistry: "https://github.com/ITensor/ITensorRegistry.git"
