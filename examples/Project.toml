@@ -1,2 +1,5 @@
 [deps]
 LabelledNumbers = "f856a3a6-4152-4ec4-b2a7-02c1a55d7993"
+
+[compat]
+LabelledNumbers = "0.1.0"

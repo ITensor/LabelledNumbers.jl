@@ -1,14 +1,17 @@
 [deps]
+Aqua = "4c88cf16-eb10-579e-8560-4a9242c79595"
 BlockArrays = "8e7c35d0-a365-5155-bbbb-fb81a777f24e"
 LabelledNumbers = "f856a3a6-4152-4ec4-b2a7-02c1a55d7993"
 LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
-Aqua = "4c88cf16-eb10-579e-8560-4a9242c79595"
 SafeTestsets = "1bc83da4-3b8d-516f-aca4-4fe02f6d838f"
 Suppressor = "fd094767-a336-5f1f-9728-57cf17d0bbfb"
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 
 [compat]
 Aqua = "0.8.9"
+BlockArrays = "1.4.0"
+LabelledNumbers = "0.1.0"
+LinearAlgebra = "<0.0.1, 1"
 SafeTestsets = "0.1"
 Suppressor = "0.2"
 Test = "1.10"
