@@ -1,7 +1,7 @@
 name = "LabelledNumbers"
 uuid = "f856a3a6-4152-4ec4-b2a7-02c1a55d7993"
 authors = ["ITensor developers <support@itensor.org> and contributors"]
-version = "0.1.1"
+version = "0.1.2"
 
 [deps]
 Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"

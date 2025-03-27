@@ -12,11 +12,11 @@ makedocs(;
   authors="ITensor developers <support@itensor.org> and contributors",
   sitename="LabelledNumbers.jl",
   format=Documenter.HTML(;
-    canonical="https://ITensor.github.io/LabelledNumbers.jl",
+    canonical="https://itensor.github.io/LabelledNumbers.jl",
     edit_link="main",
-    assets=String[],
+    assets=["assets/favicon.ico", "assets/extras.css"],
   ),
-  pages=["Home" => "index.md"],
+  pages=["Home" => "index.md", "Reference" => "reference.md"],
 )
 
 deploydocs(;
